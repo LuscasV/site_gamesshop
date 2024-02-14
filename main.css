@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* adicionando fontes ao cabeçalho e subtitulos */
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+text-decoration: none;
+    color: #ecf0f1;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* mudando o tamanho do logo nintendo, xbox e playstation */
+
+.brands-list img {
+    height: 24px;
+}
+
+/* colocando os logos nintendo, play e xbosta um do lado do outro */
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* o texto da loja estava no meio da imagem, corrigimos para q ficasse no topo */
+section .container {
+    align-items: flex-start;
+}
+
+/* fez um espaço da imagem pro cabeçalho da pagina */
+section {
+    padding: 24px 0;
+}
+
+/* fez um espaço entre o titulo e o cabeçalho da pagina */
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182C61;
+}
+
+/* fez um espaçamento entre os paragrafos */
+section p {
+    margin-bottom: 8px;
+}
+
+/* criou um espaçamento entre a imagem e os textos e aos logos ao lado da direita */
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+/* espaçamento dos logos de contado e venha ate nos */
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* colocando as caixas uma embaixo da outra */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+
+/* campo da area sua mensagem */
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+/* adiciona um background no botão de enviar */ /* cursor pointer muda a forma do ponteiro do mouse */
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+/* trocando a cor do botão quando o mouse passa por cima */
+form button:hover {
+    background-color: #314e9e;
+}
+
+/* muda a cor dos campos quando selecionados */
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}  
+
+footer {
+    background-color: #182C61;
+    color:#ecf0f1;
+    padding: 16px 0;
+}
